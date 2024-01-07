@@ -10,16 +10,26 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.app>h1 {
+.fbHeading{
+  /* border: 1px solid white; */
   margin-top: 50px;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fbHeading>h1 {
+  margin: 0;
   color: #3498db;
   font-family: 'Poppins';
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bolder;
-
 }
-
+.fbHeading > .fbIcon{
+  width: 50px;
+  height: 50px;
+}
 
 .facebook-post {
   display: flex;
@@ -28,6 +38,8 @@
   height: auto;
 
 }
+
+
 
 .post-header {
   background-color: white;
@@ -72,6 +84,12 @@
   margin-right: 10px;
 }
 
+.grid-container {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  padding: 0px;
+}
 .footter {
   display: flex;
   align-items: center;
@@ -81,7 +99,7 @@
 
 .footter>p {
   color: black;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Poppins';
 
 }
@@ -93,22 +111,21 @@
   align-items: center;
   justify-content: space-between;
   font-family: 'Poppins';
-  padding: 0 10px 0 10px;
+  padding: 10px 10px 10px 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .customBtn {
-  /* width: 30px;
-  height: 15px; */
-  background-color: none;
+  background-color: white;
   border: none;
   color: black;
   font-size: 12px;
-  border-radius: 10%;
+  font-family: 'Poppins';
+  border-radius:7%;
 }
 
 .customBtn:hover {
-  background-color: rgba(18, 136, 214, 0.5);
+  background-color: rgba(210, 212, 213, 0.5);
 }
 
 .customBtn:active {

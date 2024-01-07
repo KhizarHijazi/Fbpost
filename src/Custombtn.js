@@ -6,13 +6,12 @@ const CustomButton = ({lable , onClick}) => {
 
   
     return ( 
-    <div>
+    
 
 <button className='customBtn' onClick={onClick}>
     {lable}
     </button>
 
-    </div>
 
 
     );

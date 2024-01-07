@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import FacebookPost from './FacebookPost';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+
 
 
 import './App.css';
@@ -13,12 +16,16 @@ const App = () => {
   }, []);
   console.log(postData)
 
-if(!postData.length){
-  return <h1>Loading . . .</h1>
-}
+  if (!postData.length) {
+    return <h1>Loading . . .</h1>
+  }
   return (
     <div className="app">
-    <h1>Facebook Post</h1>
+      <div className='fbHeading'>
+        <FontAwesomeIcon className='fbIcon' icon={faFacebook} />
+        <h1>Facebook Post</h1>
+      </div>
+
       {postData.map((post, index) => (
         <FacebookPost key={index} post={post} />
       ))}
